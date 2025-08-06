@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter ({
+const poppins = Poppins ({
   weight: '400',
   subsets: ["latin"],
 });
@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className}`}
+        className={`scroll-smooth ${poppins.className}`}
       >
         {children}
       </body>
