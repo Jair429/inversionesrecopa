@@ -4,7 +4,7 @@ import { MainHome } from './components/MainHome/MainHome';
 export default function Home() {
   return (
     <>
-      {/* <Navbar/> */}
+      <Navbar/>
       <MainHome/>
       {/* <Overview/> */}
     </>
