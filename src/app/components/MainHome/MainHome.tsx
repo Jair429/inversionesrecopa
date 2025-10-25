@@ -1,9 +1,10 @@
 import { SectionAltoParaiso } from "../SectionAltoParaiso/SectionAltoParaiso";
 import { Banner } from "../Banner/Banner";
 import { Header } from "../Header/Header";
-import { CarouselSwiper } from "../CarouselSwiper/CarouselSwiper";
 import { EcoCarousel } from "../EcoCarousel";
-import { AgreButton } from '../AgreButton/AgreButton';
+import { AgreButton } from "../AgreButton/AgreButton";
+import { Form } from "../../components/Form";
+import { Social } from "../Social/Social";
 
 export function MainHome() {
   return (
@@ -15,8 +16,11 @@ export function MainHome() {
       <Header />
       <SectionAltoParaiso />
       <EcoCarousel />
-      <AgreButton/>
-      {/* <CarouselSwiper/> */}
+      <AgreButton />
+      <Form />
+      <div className="flex justify-center pb-20">
+        <Social />
+      </div>
     </>
     //   </div>
     // </div>

@@ -1,0 +1,9 @@
+{
+  "/convenio-colegio-licenciados-administracion/page": "app/convenio-colegio-licenciados-administracion/page.js",
+  "/convenio-colegio-obstetras/page": "app/convenio-colegio-obstetras/page.js",
+  "/convenio-colegio-odontologico/page": "app/convenio-colegio-odontologico/page.js",
+  "/convenio-entel/page": "app/convenio-entel/page.js",
+  "/convenio-inpe/page": "app/convenio-inpe/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/page": "app/page.js"
+}

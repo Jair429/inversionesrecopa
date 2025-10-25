@@ -4,4 +4,22 @@
     --color-green-dark:#004200;
     --color-green-light:#89C33F;
     --color-primary-text:#475b63;
+
+    --color-principal-pagina: #121416;
+    --color-button: #DCE8F3;
+    --color-borde-pagina: #2C3135;
+
+    --color-secundario-pagina: #1e2124;
+    --color-textos-card: #929ba2;
   }
+
+:root{
+
+  --icono-menu-cerrado:url('/svg/bars.svg');
+  --icono-menu-abierto:url('/svg/close.svg');
+
+
+
+  --hero-image:linear-gradient(#000000c5, #000000d8), url("/assets/banner.jpg")
+
+}

@@ -1,31 +1,27 @@
-'use client'
+"use client";
 import { dataAltoParaiso } from "@/data/dataAltoParaiso";
 import Image from "next/image";
 import Slider from "react-slick";
 
 export function SectionAltoParaiso() {
-
   const settings = {
-    dots: true,
     infinite: true,
-    speed: 500,
+    speed: 7000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
+    cssEase: "linear",
   };
   return (
     <section>
-      <div className="bg-[#fbfcf5] ">
-        <div className="flex justify-center">
-          <div className="max-w-7xl">
-            <div className="flex justify-center flex-wrap">
-              <h2 className="text-3xl text-green-dark w-[320px] sm:w-[600px] lg:w-[820px] xl:w-full lg:text-5xl font-bold lg:pb-5">
-                ¿Por qué invertir en Fundo Alto Paraíso?
-              </h2>
-            </div>
-            <div className="flex justify-center flex-wrap gap-10 py-5">
-              <div className="w-[320px] sm:w-[600px] lg:w-[380px] xl:w-[450px]">
-                <p className=" text-green-dark text-justify leading-8 text-base w-auto md:text-lg">
+      <div>
+        <div className="flex justify-center ">
+          <div className="max-w-7xl w-full">
+            <h2 className="text-3xl lg:text-5xl text-green-dark px-5 pb-5 w-full font-bold lg:py-10">
+              ¿Por qué invertir en Fundo Alto Paraíso?
+            </h2>
+            <div className="flex justify-center flex-wrap lg:flex lg:justify-between px-5 gap-5">
+                <p className=" text-green-dark rounded-2xl border-gray-50 border-1 p-5 text-justify text-base w-auto lg:w-[500px] xl:w-[700px] md:text-lg">
                   <span className="block pb-5">
                     Con su inversión en el proyecto Fundo Alto Paraíso, podrá
                     obtener una sólida oportunidad de{" "}
@@ -49,21 +45,21 @@ export function SectionAltoParaiso() {
                   <b>flujo de efectivo pasivo constante</b> a través de las
                   rentas.
                 </p>
-              </div>
 
-              <div className="w-[320px] lg:w-[400px] xl:w-[500px]">
+              <div className="w-[350px] lg:w-[440px] lg:h-[440px] border-gray-50 border-1 rounded-2xl p-5 ">
                 <Slider {...settings}>
-              {dataAltoParaiso.map(({ id, title, image, size }) => (
-                <div key={id}>
-                  <Image
-                    src={`/assets/altoparaiso/${image}.jpg`}
-                    alt={title}
-                    width={size}
-                    height={size}
-                    />
-                </div>
-              ))}
-            </Slider>
+                  {dataAltoParaiso.map(({ id, title, image, size }) => (
+                    <div key={id}>
+                      <Image
+                        src={`/assets/altoparaiso/${image}.jpg`}
+                        alt={title}
+                        width={size}
+                        height={size}
+                        className="rounded-lg px-1"
+                      />
+                    </div>
+                  ))}
+                </Slider>
               </div>
             </div>
             {/* <div className="flex justify-center">
@@ -79,12 +75,11 @@ export function SectionAltoParaiso() {
                 rentas.
               </p>
             </div> */}
-            <div className="flex justify-center">
-              <h2 className="py-10 text-xl w-[320px] lg:text-3xl text-green-dark font-bold italic sm:w-[600px] lg:w-[820px] xl:w-[1000px]">
+            <div className="flex justify-center px-5 py-10">
+              <h2 className="py-10 text-xl p-5 lg:text-2xl rounded-2xl border-1 shadow-xl border-gray-50 text-green-dark font-bold italic ">
                 ¡Descubre las ventajas de invertir en Fundo Alto Paraíso y
                 asegura tu futuro financiero!
               </h2>
-              <div></div>
             </div>
           </div>
         </div>
